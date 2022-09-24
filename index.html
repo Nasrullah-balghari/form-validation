@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Registration form</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <div>
+            <div class="container ltr" style="padding-bottom: 50px;">
+                <div class="row">
+                    <div class="col">
+                        <div class="registration_header"><img src="./logo.png" class="form_logo">
+                            <h2 class="ant-typography heading_english undefined">Course Registration Form</h2><span
+                                class="ant-typography text_english page_header_text">Services - Education -
+                                Registration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-centered">
+                    <div role="tablist" class="ant-tabs-nav" style="color: rgb(13, 109, 183);">
+                        <div class="ant-tabs-nav-wrap">
+                            <div class="ant-tabs-nav-list" style="transform: translate(0px, 0px);">
+                                <div class="ant-tabs-tab ant-tabs-tab-active">
+                                    <div role="tab" aria-selected="true" class="ant-tabs-tab-btn" tabindex="0"
+                                        id="rc-tabs-0-tab-1" aria-controls="rc-tabs-0-panel-1"><span
+                                            class="ant-typography text_english theme_green">New Application</span></div>
+                                </div>
+                                <div class="ant-tabs-tab">
+                                    <div role="tab" aria-selected="false" class="ant-tabs-tab-btn" tabindex="0"
+                                        id="rc-tabs-0-tab-2" aria-controls="rc-tabs-0-panel-2"><span
+                                            class="ant-typography text_english theme_blue">Download ID Card</span></div>
+                                </div>
+                                <div class="ant-tabs-tab">
+                                    <div role="tab" aria-selected="false" class="ant-tabs-tab-btn" tabindex="0"
+                                        id="rc-tabs-0-tab-3" aria-controls="rc-tabs-0-panel-3"><span
+                                            class="ant-typography text_english theme_blue">Results</span></div>
+                                </div>
+                                <div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                                    style="left: 0px; width: 147px;"></div>
+                            </div>
+                        </div>
+                        <div class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"
+                            style="color: rgb(13, 109, 183);"><button type="button" class="ant-tabs-nav-more"
+                                tabindex="-1" aria-hidden="true" aria-haspopup="listbox"
+                                aria-controls="rc-tabs-0-more-popup" id="rc-tabs-0-more" aria-expanded="false"
+                                style="visibility: hidden; order: 1;"><span role="img" aria-label="ellipsis"
+                                    class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false"
+                                        data-icon="ellipsis" width="1em" height="1em" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z">
+                                        </path>
+                                    </svg></span></button></div>
+                    </div>
+                    <div class="ant-tabs-content-holder">
+                        <div class="ant-tabs-content ant-tabs-content-top">
+                            <div role="tabpanel" tabindex="0" aria-hidden="false"
+                                class="ant-tabs-tabpane ant-tabs-tabpane-active" id="rc-tabs-0-panel-1"
+                                aria-labelledby="rc-tabs-0-tab-1">
+                                <form>
+                                    <div class="row justify-content-center ltr">
+                                        <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                            <div class="undefined theme_input undefined"><label
+                                                    class="input_label"><span
+                                                        class="ant-typography text_english theme_blue">Select
+                                                        city</span></label>
+                                                <select name="" id="city" class="select">
+                                                    <option value="Select City" selected>select city</option>
+                                                    <option value="Karachi">Karachi</option>
+                                                    <option value="Lahore">Lahore</option>
+                                                    <option value="Faisalabad">Faisalabad</option>
+                                                    <option value="ٰٰIslamabad">ٰٰIslamabad</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                            <div class="undefined theme_input undefined"><label
+                                                    class="input_label"><span
+                                                        class="ant-typography text_english theme_blue">Select
+                                                        course</span></label>
+                                                <select name="" id="course" class="select">
+                                                    <option value="select course" selected>select course</option>
+                                                    <option value="web app">Web app</option>
+                                                    <option value="mob app">mob app </option>
+                                                    <option value="Graphic">Graphic</option>
+                                                    <option value="AI$Chatbot">ٰٰAI&Chatbot</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center ltr">
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Full
+                                                            name</span></label><input id="name" name="full_name"
+                                                        class="ant-input theme_input_ltr undefined" type="text"
+                                                        placeholder="Full name" value=""></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Father
+                                                            name</span></label><input name="father_name"
+                                                        class="ant-input theme_input_ltr undefined" type="text"
+                                                        placeholder="Father name" value="" id="father_name"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center ltr">
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Email</span></label>
+                                                    <input id="email" name="email"
+                                                        class="ant-input theme_input_ltr undefined" type="email"
+                                                        placeholder="Email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Phone</span></label><input
+                                                        id="phone" name="contact_number"
+                                                        class="ant-input theme_input_ltr undefined" type="number"
+                                                        placeholder="Phone" value=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center ltr">
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">CNIC</span></label><input
+                                                        id="std_cnic" name="student_cnic"
+                                                        class="ant-input theme_input_ltr undefined" type="number"
+                                                        placeholder="CNIC" value=""></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Father's CNIC
+                                                            (optional)</span></label><input id="father_cnic"
+                                                        name="father_cnic" class="ant-input theme_input_ltr undefined"
+                                                        type="number" placeholder="Father's CNIC (optional)" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center ltr">
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input"><label class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Date of
+                                                            birth</span></label><input id="date_of_birth"
+                                                        name="date_of_birth" class="ant-input theme_input_ltr undefined"
+                                                        type="date" placeholder="Date of birth" value=""></div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 mt_20 col-md-6 col-lg-5">
+                                                <div class="undefined theme_input undefined"><label
+                                                        class="input_label"><span
+                                                            class="ant-typography text_english theme_blue">Select
+                                                            gender</span></label> <br>
+                                                    <select name="" id="gender" class="select">
+                                                        <option value="select gender" selected>select gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center ltr">
+                                                <div class="col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+                                                    <div class="undefined theme_input"><label class="input_label"><span
+                                                                class="ant-typography text_english theme_blue">Address</span></label><input
+                                                            id="address" name="full_address"
+                                                            class="ant-input theme_input_ltr undefined" type="text"
+                                                            placeholder="Address" value=""></div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row justify-content-center ltr">
+                                                <div class="col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+                                                    <div class="undefined theme_input undefined"><label
+                                                            class="input_label"><span
+                                                                class="ant-typography text_english theme_blue">Last
+                                                                qualification</span></label>
+
+                                                        <div class="radio" id ="qualification">
+
+                                                            <input type="radio" id="matric" 
+                                                                value="Matric">
+                                                            <label class="radio" for="matric">Matric</label>
+                                                            <input type="radio" id="Inter" name="fav_language"
+                                                                value="Intermediate">
+                                                            <label class="radio" for="inter">Intermediate</label>
+                                                            <input type="radio" id="bachelor" name="fav_language"
+                                                                value="Bachelor">
+                                                            <label class="radio" for="bachelor">Bachelor</label>
+                                                            <input type="radio" id="Master" name="fav_language"
+                                                                value="Master">
+                                                            <label class="radio" for="Master">Master</label>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center ltr">
+                                                <div class="col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+                                                    <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                                                        <div class="d-flex upload_box">
+                                                            <div><label class="input_label"><span
+                                                                        class="ant-typography text_english theme_blue">Picture</span></label><span
+                                                                    class="ant-upload-picture-card-wrapper">
+                                                                    <div
+                                                                        class="ant-upload-list ant-upload-list-picture-card">
+                                                                        <div
+                                                                            class="ant-upload ant-upload-select ant-upload-select-picture-card">
+                                                                            <span tabindex="0" class="ant-upload"
+                                                                                role="button"><input type="file"
+                                                                                    accept="image/*"
+                                                                                    style="display: none;">+
+                                                                                Upload</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </span></div>
+                                                            <div class="picture_rules picture_rules_ltr">
+                                                                <ul>
+                                                                    <li><span
+                                                                            class="ant-typography text_english normal_text">With
+                                                                            white or blue background</span></li>
+                                                                    <li><span
+                                                                            class="ant-typography text_english normal_text">File
+                                                                            size must be less than 1MB</span></li>
+                                                                    <li><span
+                                                                            class="ant-typography text_english normal_text">File
+                                                                            type: jpg, jpeg, png</span></li>
+                                                                    <li><span
+                                                                            class="ant-typography text_english normal_text">Upload
+                                                                            your recent passport size picture</span>
+                                                                    </li>
+                                                                    <li><span
+                                                                            class="ant-typography text_english normal_text">Your
+                                                                            Face should be clearly visible without any
+                                                                            Glasses</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center  ltr">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                                    <div class="ant-divider ant-divider-horizontal" role="separator">
+                                                    </div>
+                                                    <div class="rules_box">
+                                                        <ol>
+                                                            <li><span class="ant-typography text_english normal_text">I
+                                                                    hereby,
+                                                                    solemnly declare that the data and facts mentioned
+                                                                    herein
+                                                                    are true and correct to the best of my knowledge.
+                                                                    Further, I
+                                                                    will abide by all the established and future
+                                                                    regulations and
+                                                                    policies of SWIT</span></li>
+                                                            <li><span class="ant-typography text_english normal_text">I
+                                                                    hereby
+                                                                    accept the responsibilities of good conduct and
+                                                                    guarantee
+                                                                    that I will not be involved in any other activity,
+                                                                    political
+                                                                    or ethical, but learning during my stay in the
+                                                                    program.</span></li>
+                                                            <li><span
+                                                                    class="ant-typography text_english normal_text">Defiance
+                                                                    will render my admission canceled at any point in
+                                                                    time.</span></li>
+                                                            <li><span
+                                                                    class="ant-typography text_english normal_text">Upon
+                                                                    completion, of the course, I will complete the
+                                                                    required
+                                                                    project by SWIT.</span></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center registration_page_padding ltr">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                                    <div class="submit_btn"><button type="submit" id="submit-btn"
+                                                            class="undefined theme_btn btn btn-primary"><span
+                                                                class="ant-typography text_english theme_white">SUBMIT</span>
+                                                        </button></div>
+                                                </div>
+                                            </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" tabindex="-1" aria-hidden="true" class="ant-tabs-tabpane"
+                                id="rc-tabs-0-panel-2" aria-labelledby="rc-tabs-0-tab-2" style="display: none;"></div>
+                            <div role="tabpanel" tabindex="-1" aria-hidden="true" class="ant-tabs-tabpane"
+                                id="rc-tabs-0-panel-3" aria-labelledby="rc-tabs-0-tab-3" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <br> <br> <br>
+        <div class=" button1">
+           <button class="button" onclick="admin()">Admin panel</button>
+        </div>
+    </div>
+    -->
+
+
+    <!-- <input type="text" name="fname" id="fname">
+
+<button id="value-btn">Print Value</button> -->
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
